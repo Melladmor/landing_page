@@ -21,9 +21,9 @@ const Services = () => {
         title="Our Services"
         content="We specialize in helping you build a team of expert developers."
       />
-      <section className="pagesPadding py-16">
+      <section className="pagesPadding py-16 sm:px-5 xs:px-5">
         <h2 className="h2">Hire Permanent and Remote Developers</h2>
-        <p className="p2 w-[700px] text-start uppercase">
+        <p className="p2 lg:w-[700px] text-start uppercase">
           From full-time remote engineering teams to hourly contractors, work
           with remote devs as needed
         </p>

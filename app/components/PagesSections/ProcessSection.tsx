@@ -13,7 +13,7 @@ const ProcessSection = (props: Props) => {
     <section className="h-auto w-full bg-linear-yellow flex items-center justify-center flex-col gap-3 py-6">
       <h4 className="text-white text-[22px] font-semibold">How To Start</h4>
       <h2 className="h2">Easy Process</h2>
-      <p className="p2 w-[435px] text-center uppercase">
+      <p className="p2 lg:w-[435px] md:w-[435px] sm:w-[435px] xs:w-[250px] text-center uppercase">
         We specialize in helping you build a team of expert developers, testers,
         and leaders.
       </p>

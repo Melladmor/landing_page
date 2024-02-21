@@ -49,19 +49,19 @@
   }
 
   .h1 {
-    @apply lg:text-[64px] md:text-[45px] sm:text-[36px]  font-semibold;
+    @apply lg:text-[64px] md:text-[45px] sm:text-[36px] xs:text-[30px]  font-semibold;
   }
 
   .h2 {
-    @apply text-[46px] font-semibold;
+    @apply lg:text-[46px] md:text-[40px] sm:text-[34px] xs:text-[26px]  font-semibold;
   }
 
   .h3 {
-    @apply text-[28px] font-semibold;
+    @apply lg:text-[28px] md:text-[24px] sm:text-[20px] xs:text-[18px] font-semibold;
   }
 
   .h4 {
-    @apply text-[22px] font-semibold;
+    @apply lg:text-[22px] md:text-[20px] sm:text-[18px] xs:text-[16px]  font-semibold;
   }
 
   .p1 {

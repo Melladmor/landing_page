@@ -51,13 +51,13 @@ const FormContact = (props: Props) => {
             />
           </label>
           <label className="input input-bordered  input-md flex items-center gap-2">
-            Your Name
+            Name
             <input
               type="text"
               name="name"
               value={form.name}
               className="grow "
-              placeholder="Company"
+              placeholder="Name"
               onChange={onChange}
             />
           </label>
@@ -65,13 +65,13 @@ const FormContact = (props: Props) => {
 
         <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 gap-3">
           <label className="input input-bordered  input-md flex items-center gap-2">
-            Phone Number
+            Phone
             <input
               type="number"
               name="phone_number"
               value={form.phone_number}
               className="grow "
-              placeholder="Company"
+              placeholder="Phone"
               onChange={onChange}
             />
           </label>
@@ -82,7 +82,7 @@ const FormContact = (props: Props) => {
               className="grow"
               name="email"
               value={form.email}
-              placeholder="Company"
+              placeholder="Email"
               onChange={onChange}
             />
           </label>

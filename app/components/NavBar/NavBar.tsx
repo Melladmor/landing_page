@@ -62,7 +62,7 @@ const NavBar = (props: Props) => {
       return (
         <Link
           key={button.id}
-          href={`${button.link}`}
+          href={button.link!}
           className={`text-sm ${isActive(button.link!) ? "activeLink" : ""}`}>
           {button.title}
         </Link>

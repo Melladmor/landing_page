@@ -21,9 +21,9 @@ const Technologies = () => {
         title="Technologies"
         content="We specialize in helping you build a team of expert developers."
       />
-      <section className="pagesPadding py-16">
+      <section className="pagesPadding py-16 sm:px-5 xs:px-5">
         <h2 className="h2">Technologies</h2>
-        <p className="p2 w-[700px] text-start uppercase">
+        <p className="p2 lg:w-[700px] text-start uppercase">
           Using the right technology for the right problem is our mantra. We are
           agile about learning new processes and tools to save time and reduce
           complexity
