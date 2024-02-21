@@ -2,26 +2,85 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer components {
+  .pagesPadding {
+    @apply lg:px-52 md:px-4 sm:px-4;
   }
-}
+  .cardDefaultStyle {
+    @apply flex gap-2 items-start shadow-xl;
+  }
+  .cardColumnStyle {
+    @apply flex flex-col gap-2 items-start;
+  }
+  .activeLink {
+    @apply text-orange;
+  }
+  .activeButton {
+    @apply text-white bg-orange;
+  }
+  .activeButton:focus-within {
+    @apply bg-orange text-white;
+  }
+  .activeButton:focus {
+    @apply bg-orange text-white;
+  }
+  .button {
+    @apply h-12 px-4 rounded-md min-w-[201px] flex flex-nowrap items-center justify-center gap-4 disabled:cursor-not-allowed;
+  }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .coloredButton {
+    @apply active:bg-orange bg-linear-yellow disabled:opacity-10 text-white active:shadow-md;
+  }
+  .normalButton {
+    @apply bg-primary_gray active:shadow-md active:bg-opacity-25 text-black disabled:text-gray-400;
+  }
+  .headColor {
+    @apply text-primary;
+  }
+
+  .h1 {
+    @apply lg:text-[64px] md:text-[45px] sm:text-[36px]  font-semibold;
+  }
+
+  .h2 {
+    @apply text-[46px] font-semibold;
+  }
+
+  .h3 {
+    @apply text-[28px] font-semibold;
+  }
+
+  .h4 {
+    @apply text-[22px] font-semibold;
+  }
+
+  .p1 {
+    @apply lg:text-[24px] md:text-[22px] sm:text-[20px] font-normal headColor;
+  }
+
+  .p2 {
+    @apply text-[18px] font-normal headColor;
+  }
+  .tab {
+    @apply bg-white h-[54px] text-gray-400 text-[16px] font-semibold active:bg-orange active:text-white;
+  }
+  .tab:first-of-type {
+    @apply first-of-type:rounded-tl-md first-of-type:rounded-bl-md;
+  }
+  .tab:last-of-type {
+    @apply last-of-type:rounded-br-md last-of-type:rounded-tr-md;
+  }
+  .section_form_contact {
+    @apply lg:absolute  lg:top-[8%] lg:left-[43%];
+  }
 }
